@@ -1,0 +1,114 @@
+body
+{
+    background-image: url(../images/code.jpeg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    font-family: sans-serif;
+    color: #222;
+}
+.divfondo
+{
+    background-color: #E7E7E7; 
+    padding: 1em; 
+    padding-bottom: 2em;
+    margin-left: 7%; 
+    margin-right: 7%;
+}
+h1
+{
+    text-align: center; 
+    color:#09F;
+    text-shadow: 2px 2px 0 #000;
+    opacity: 1;
+}
+h2, h3, h4, h5, h6
+{
+    text-indent: 1em;
+}
+.divcodigo
+{
+    color: #F0F0F0;
+    background-color: #003;
+    font-family: monospace; 
+    padding:2em;
+}
+.htmldefault
+{
+    color: black;
+    background-color: white;
+    font-family: serif; 
+    padding:2em;
+}
+.htmldefault h1
+{
+    text-align: left;
+    color: initial;
+    text-shadow: initial;
+    opacity: initial;
+}
+.htmldefault h2, .htmldefault h3, .htmldefault h4, .htmldefault h5, .htmldefault h6
+{
+    text-indent: initial;
+}
+a
+{
+    text-decoration: none; 
+}
+a li
+{
+    text-decoration: none; 
+    font-weight: bold;  
+    color: #090;
+    background-color: transparent;
+}
+a li:hover, a li:active
+{
+    background-color: #C5C5C5;
+}
+footer
+{
+    bottom:0px;
+    color:yellow;
+    background-color: #003;
+    text-align: center;
+    padding: 10px;
+    margin:0;
+    margin-top: 3em;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.volver
+{
+    margin: 2em;
+}
+.abotonB:link, .abotonB:visited
+{
+    background-color: #09F;
+    color: #E7E7E7;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: normal;
+}
+.abotonB:hover, .abotonB:active
+{
+    background-color: #2BF;
+}
+.abotonR:link, .abotonR:visited
+{
+    background-color: #FF1A1A;
+    color: #E7E7E7;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: normal;
+}
+.abotonR:hover, .abotonR:active
+{
+    background-color: #FF4D4D;
+}
