@@ -21,15 +21,23 @@
             <p>
                 Javascript es un lenguaje interpretado que se embebe en una página web HTML. Un lenguaje interpretado, recordemos, analiza las instrucciones y las procesa en el navegador en el momento en que deben ser ejecutadas.
             </p>
+            <p>
+                Un programa en Javascript debe ir encerrado entre las marcas html <em>&lt;script>&lt;/script></em>. Para imprimir caracteres sobre el documento debemos llamar al comando <em>write</em> del objeto <em>document</em>. La información a imprimirse debe ir entre comillas simples y encerrada entre paréntesis. Todo lo que indiquemos entre comillas se escribirá tal cual en el código HTML como si nosotros lo hubiéramos escrito directamente. Cada instrucción debe finalizar con el caracter punto y coma (;). Es importante tener en cuenta que Javascript es sensible a mayúsculas y minúsculas.
+            </p>
 
     	    <h2>Primer ejemplo: Hola mundo</h2>
     	    <p>
     	        Hola mundo en javascript:
-    	        <iframe src="./introCode.html" width="100%" height="400" style="padding: 0;"></iframe>
+    	        <iframe src="./introCode.html" width="100%" height="230" style="padding: 0;"></iframe>
+                <div style="background-color: white;">
+                    <iframe id="ejemplo" src="./introExe.html" width="100%" height="230" style="padding: 0;"></iframe>
+                </div>
+
+                <button class="abotonR" onclick="
+                var iframe = document.getElementById('ejemplo');
+                iframe.src = iframe.src;
+                ">Ejecutar ejemplo</button>
     	    </p>
-            <p>
-                <a href="./introExe.html" class="abotonR">Ejecutar ejemplo</a>
-            </p>
         <a href="./" class="abotonB">Volver al índice</a>
         </div>
     </body>

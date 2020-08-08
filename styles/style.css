@@ -82,8 +82,10 @@ footer
 {
     margin: 2em;
 }
-.abotonB:link, .abotonB:visited
+.abotonB, .abotonB:link, .abotonB:visited
 {
+    margin: none;
+    border: none;
     background-color: #09F;
     color: #E7E7E7;
     padding: 10px 20px;
@@ -97,8 +99,10 @@ footer
 {
     background-color: #2BF;
 }
-.abotonR:link, .abotonR:visited
+.abotonR:link, .abotonR:visited, .abotonR
 {
+    margin: none;
+    border: none;
     background-color: #FF1A1A;
     color: #E7E7E7;
     padding: 10px 20px;

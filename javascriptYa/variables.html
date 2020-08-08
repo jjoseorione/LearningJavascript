@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso Javascript - Variables</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Variables</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Como sabemos, una variable es símplemente una locación de memoria donde se guarda un valor. Los principales tipos de variables que pueden ser guardadas en Javascript son los siguientes:
+                <ul>
+                    <li><strong>Enteros.</strong> Por ejempplo: 100, 260, 43, etc.</li>
+                    <li><strong>Reales.</strong> Por ejemplo: 1.24, 69.90, 3.141592, etc.</li>
+                    <li><strong>Cadenas de caracteres.</strong> Por ejemplo: 'Juan', 'Compras', 'Listado', etc.</li>
+                    <li><strong>Booleanos</strong>. Es decir, 'true' y 'false'.</li>
+                </ul>
+    	    </p>
+            <p>
+                Para declarar una variable únicamente debe ponerse la palabra <em>var</em>, seguida del nombre de nuestra variable y separadas por un espacio. Al igual que en otros lenguajes, como C, es posible declarar más de una variable en una misma linea agregando más nombrs de variables separadas por comas. También, como ocurre en otros lenguajes, es posible inicializar una variable al momento de su declaración, o bien, puede inicializarse después.
+            </p>
+            <p>
+                Para imprimir una variable en nuestro documento necesitamos nuevamente la función <em>write</em> del objeto <em>document</em>. Para imprimir el valor de una variable, omitimos las comillas simples, ya que si las usamos aparecería el nombre en lugar del valor.
+            </p>
+            <p>
+                Cuando imprimimos varios datos es posible concatenar con el operador '+' para que no sea necesario llamar a la función write más de una vez.
+            </p>
+            <p>
+                Los comentarios, al igual que en C pueden ponerse por línea con una doble diagonal (//) o por bloque con diagonal y asterísco (/* */).
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+                En el siguiente ejemplo se muestra la forma en que pueden ser declaradas, inicializadas algunas variables. Cuando se imprimen las variables, se imprimen de 3 maneras distintas: la primera, imprime en cada línea una palabra diferente, la segunda imprime cada dato en una línea usando la concatenación. Por último, la última imprime todo usando sólo una vez la función write, aunque repartido en varias líneas para mejor ordenamiento. Podemos ver que las tres formas imprimen exactamente lo mismo.
+    	        <iframe src="./variablesCode.html" width="100%" height="400" style="padding: 0;"></iframe>
+                <div style="background-color: white;">
+                    <iframe id="ejemplo" src="./variablesExe.html" width="100%" height="400" style="padding: 0;"></iframe>
+                </div>
+
+                <button class="abotonR" onclick="
+                var iframe = document.getElementById('ejemplo');
+                iframe.src = iframe.src;
+                ">Ejecutar ejemplo</button>
+            </p>
+        <a href="./" class="abotonB">Volver al índice</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body style="background-color: white;">
+    <script>
+      var nombre, edad, email, casado, estatura;
+      nombre = 'José';
+      edad = 25;
+      email = 'jjoseorione@gmail.com'; //Esto es un comentario
+      estatura = 1.70;  /* Esto es un comentario*/
+      casado = false;
+      //Línea independientes
+      document.write('Nombre: ');
+      document.write(nombre);
+      document.write('<br>');
+      document.write('Edad: ');
+      document.write(edad);
+      document.write('<br>');
+      document.write('E-mail: ');
+      document.write(email);
+      document.write('<br>');
+      document.write('Estatura: ');
+      document.write(estatura);
+      document.write('<br>');
+      document.write('Casado: ');
+      document.write(casado);
+      document.write('<br>');
+      //Un dato por línea
+      document.write('Nombre: ' + nombre + '<br>');
+      document.write('Edad: ' + edad + '<br>');
+      document.write('E-mail: ' + email + '<br>');
+      document.write('Estatura: ' + estatura + '<br>');
+      document.write('Casado: ' + casado + '<br>');
+      //Todo en la misma línea
+      document.write('Nombre: ' + nombre + '<br>' +
+                     'Edad: ' + edad + '<br>' +
+                     'E-mail: ' + email + '<br>' +
+                     'Estatura: ' + estatura + '<br>' +
+                     'Casado: ' + casado + '<br>');
+    </script>
+  </body>
+</html>
