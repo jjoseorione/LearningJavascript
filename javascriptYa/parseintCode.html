@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+<style>
+.divcodigo
+{
+  color: #F0F0F0;
+  background-color: #003;
+  font-family: monospace;
+}
+</style>
+<meta charset="UTF-8">
+</head>
+
+<body class="divcodigo">
+<pre>
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>Ejemplo de parseInt&lt;/title>
+    &lt;meta charset="UTF-8">
+  &lt;/head>
+
+  &lt;body>
+    &lt;script>
+      var num1, num2, num3;
+      num1 = prompt('Escriba un número', '');
+      num2 = prompt('Escriba otro número', '');
+      num3 = num2 + num1;
+      document.write('Resultado sin parseInt: ' + num3);
+      num2 = parseInt(num2);
+      num1 = parseInt(num1);
+      num3 = num2 + num1;
+      document.write('&lt;br>Resultado con parseInt: ' + num3);
+    &lt;/script>
+  &lt;/body>
+&lt;/html>
+</pre>
+</body>
+
+</html>

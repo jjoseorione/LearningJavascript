@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body style="background-color: white;">
+    <h2>Ejemplo de condiciones if</h2>
+    <p>
+      Este programa lee 3 números enteros. Si el primer número ingresado es el mayor de los tres, se muestra la suma de los tres; si el segundo es el más grande, se muestra el producto; si el tercero es el mayor, se muestran la suma y el producto; si existe un empate entre dos o más por ser el mayor, se tomará en cuenta el primero en ser ingresado. Además, el programa también nos indica si existe uno mayor o si existe un empate.
+    </p>
+
+    <script>
+      var num1, num2, num3, suma, producto;
+      num1 = parseInt(prompt('Ingrese el primer número', ''));
+      num2 = parseInt(prompt('Ingrese el segundo número', ''));
+      num3 = parseInt(prompt('Ingrese el tercer número', ''));
+      if(isNaN(num1) || isNaN(num2) || isNaN(num3))
+        document.write('Error, uno o más valores no fueron ingresados correctamente');
+      else
+      {
+        suma = num1+num2+num3;
+        producto = num1*num2*num3;
+        document.write('<p> num1 = ' + num1 + '<br>num2 = ' + num2 + '<br>num3 = ' + num3 + '<br>');
+        if (num1>=num2 && num1>=num3)
+          document.write('La suma es: ' + num1 + '+' + num2 + '+' + num3 + ' = ' + suma);
+        if (num2>=num1 && num2>=num3)
+          document.write('El producto es: ' + num1 + '*' + num2 + '*' + num3 + ' = ' + producto);
+        if (num3>=num1 && num3>=num2)
+        {
+          document.write('La suma es: ' + num1 + '+' + num2 + '+' + num3 + ' = ' + suma);
+          document.write('<br>');
+          document.write('El producto es: ' + num1 + '*' + num2 + '*' + num3 + ' = ' + producto);
+        }
+      }
+    </script>
+  </body>
+</html>

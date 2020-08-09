@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso Javascript - Función parseInt</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Función parseInt</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Como se vio anteriormente, el oprador + nos permite concatenar cadenas, pero también sirve para sumar números. El tipo de variables que estemos usando será lo que le indique al operador si concatenar o sumar; si nuestras variables son de tipo caracter o cadena, será concatenación; en cambio, si nuestras variables son de cualquier tipo numérico, funcionará como suma.
+    	    </p>
+            <p>
+                Cuando obtenemos una entrada de datos con la función <code>prompt()</code>, el tipo de variable por defecto es cadena. Es por eso que si queremos tratar una entrada como número entero, debemos hacer uso de la función <span class="code">parseInt(var)</span>, donde <em>var</em> es la variable que necesitamos convertir a numérica. Es importante notar que esta función convierte la entrada a número entero y por consiguiente ignorará cualquier parte fraccionaria que agreguemos; por ejemplo, si tecleamos <em>4.5</em>, la función lo convertirá en <em>4</em>.
+            </p>
+            <p>
+                Si al menos un elemento de la operación + sigue siendo de tipo cadena o caracter, la operación efectuada será concatenación.
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+                A continuación se muestra la diferencia de usar el operador + con cadenas y con números enteros.
+    	        <iframe src="./parseintCode.html" width="100%" height="400" style="padding: 0;"></iframe>
+
+                <a href="parseintExe.html" class="abotonR">Ejecutar ejemplo</a>
+            </p>
+        <a href="./" class="abotonB">Volver al índice</a>
+        </div>
+    </body>
+</html>

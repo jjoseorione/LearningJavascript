@@ -116,3 +116,19 @@ footer
 {
     background-color: #FF4D4D;
 }
+code
+{
+    color: blue;
+    font-family: monospace;
+    font-size: 1.1em;
+    background-color: #BBB;
+    padding: 0 3px;
+}
+.code
+{
+    color: blue;
+    font-family: monospace;
+    font-size: 1.1em;
+    background-color: #BBB;
+    padding: 0 3px;
+}
