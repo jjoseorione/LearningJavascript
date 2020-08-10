@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body style="background-color: white;">
+    <h2>Ejemplo de condiciones if</h2>
+    <p>
+      Este programa lee las calificaciones de los 3 exámenes parciales de un alumno. En caso de que la calificación de los 3 exámenes sea aprobatoria, el alumno excenta; en caso de que sólo un examen tenga calificación reprobatoria y el promedio de los tres exámenes sea aprobatorio, se debe reponer el examen reprobado; en cambio, si se reprobó mas de un examen o si el promedio de los tres exámenes es reprobatorio, se debe realizar examen final.
+    </p>
+
+    <script>
+      var examen1, examen2, examen3, promedio;
+      examen1 = parseInt(prompt('Escriba la calificación del primer examen', ''));
+      examen2 = parseInt(prompt('Escriba la calificación del segundo examen', ''));
+      examen3 = parseInt(prompt('Escriba la calificación del tercer examen', ''));
+      if(isNaN(examen1) || isNaN(examen2) || isNaN(examen3) ||
+               examen1>10 || examen1<0 ||
+               examen2>10 || examen2<0 ||
+               examen3>10 || examen3<0)
+        document.write('<p>Error en uno o más datos. Intente de nuevo.</p>');
+      else
+      {
+        promedio = (examen1+examen2+examen3)/3;
+        document.write('<p>Examen 1: ' + examen1 + 
+                       '<br>Examen 2: ' + examen2 + 
+                       '<br>Examen 3: ' + examen3 + '</p>');
+        if(promedio >= 6)
+        {
+          if(examen1>=6 && examen2>=6 && examen3>=6)
+            document.write('<p>Felicidades, estás excento con prmedio de ' + promedio + '</p>');
+          else if(examen1>=6 && examen2>=6)
+            document.write('<p>Aún no estás excento. Debes reponer el tercer examen</p>');
+          else if(examen1>=6 && examen3>=6)
+            document.write('<p>Aún no estás excento. Debes reponer el segundo examen</p>');
+          else if(examen2>=6 && examen3>=6)
+            document.write('<p>Aún no estás excento. Debes reponer el primer examen</p>');
+          else
+            document.write('<p>Aún no estás excento. Debes hacer examen final</p>');
+        }
+        else
+          document.write('<p>Aún no estás excento. Debes hacer examen final</p>');
+      }
+    </script>
+  </body>
+</html>

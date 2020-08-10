@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso Javascript - Valor NaN</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Valor NaN (Not a Number)</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Este tema podría considerarse más avanzado en el estudio de Javascript, pero considero que es importante verlo de este momento. Retomemos por un momento la función <code>parseInt()</code>; recordaremos que esta función la usamos para converir la entrada que leemos con la función <code>prompt</code> a tipo entero, para poder utilizarla como operando. Pero pensemos que, en lugar de introducir algún valor numérico, introducimos algún caracter no numérico, como una letra, un símbolo o simplemente no introducimos nada. Cuando esta entrada intente convertirse en un valor numérico, obtendremos el valor NaN, que significa <em>Not a Number</em>.
+    	    </p>
+            <p>
+                Es útil mencionar la existencia de este valor para evitar que podamos tener errores en el futuro y cubrir todas las posibilidades de lo que puede pasar al ejecutar un programa en Javascript.
+            </p>
+            <p>
+                El valor NaN siempre devolverá un valor <em>false</em> al compararlo con cualquier cosa; incluso con él mismo. La única forma de verificar si una variable contiene NaN es usando la función <code>isNaN(<em>var</em>)</code>, donde var es la variable a verificar.
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+                Retomemos el ejemplo anterior de los exámenes. Se agregará una condicional al inicio que compruebe que los valores ingresados son válidos. Es decir, no se podrán introducir valores no numéricos ni valores que no estén entre 0 y 10 (intervalo de calificación).
+    	        <iframe src="./nanCode.html" width="100%" height="900" style="padding: 0;"></iframe>
+
+                <a href="nanExe.html" class="abotonR">Ejecutar ejemplo</a>
+            </p>
+        <a href="./" class="abotonB">Volver al índice</a>
+        </div>
+    </body>
+</html>

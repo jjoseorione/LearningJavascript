@@ -8,32 +8,34 @@
   <body style="background-color: white;">
     <h2>Ejemplo de condiciones if</h2>
     <p>
-      Este programa lee 3 números enteros. Si el primer número ingresado es el mayor de los tres, se muestra la suma de los tres; si el segundo es el más grande, se muestra el producto; si el tercero es el mayor, se muestran la suma y el producto; si existe un empate entre dos o más por ser el mayor, se tomará en cuenta el primero en ser ingresado. Además, el programa también nos indica si existe uno mayor o si existe un empate.
+      Este programa lee las calificaciones de los 3 exámenes parciales de un alumno. En caso de que la calificación de los 3 exámenes sea aprobatoria, el alumno excenta; en caso de que sólo un examen tenga calificación reprobatoria y el promedio de los tres exámenes sea aprobatorio, se debe reponer el examen reprobado; en cambio, si se reprobó mas de un examen o si el promedio de los tres exámenes es reprobatorio, se debe realizar examen final.
     </p>
 
     <script>
-      var num1, num2, num3, suma, producto;
-      num1 = parseInt(prompt('Ingrese el primer número', ''));
-      num2 = parseInt(prompt('Ingrese el segundo número', ''));
-      num3 = parseInt(prompt('Ingrese el tercer número', ''));
-      if(isNaN(num1) || isNaN(num2) || isNaN(num3))
-        document.write('Error, uno o más valores no fueron ingresados correctamente');
-      else
+      var examen1, examen2, examen3, promedio;
+      examen1 = parseInt(prompt('Escriba la calificación del primer examen', ''));
+      examen2 = parseInt(prompt('Escriba la calificación del segundo examen', ''));
+      examen3 = parseInt(prompt('Escriba la calificación del tercer examen', ''));
+      promedio = (examen1+examen2+examen3)/3;
+      document.write('<p>Examen 1: ' + examen1 + 
+                     '<br>Examen 2: ' + examen2 + 
+                     '<br>Examen 3: ' + examen3 + '</p>');
+      if(promedio >= 6)
       {
-        suma = num1+num2+num3;
-        producto = num1*num2*num3;
-        document.write('<p> num1 = ' + num1 + '<br>num2 = ' + num2 + '<br>num3 = ' + num3 + '<br>');
-        if (num1>=num2 && num1>=num3)
-          document.write('La suma es: ' + num1 + '+' + num2 + '+' + num3 + ' = ' + suma);
-        if (num2>=num1 && num2>=num3)
-          document.write('El producto es: ' + num1 + '*' + num2 + '*' + num3 + ' = ' + producto);
-        if (num3>=num1 && num3>=num2)
-        {
-          document.write('La suma es: ' + num1 + '+' + num2 + '+' + num3 + ' = ' + suma);
-          document.write('<br>');
-          document.write('El producto es: ' + num1 + '*' + num2 + '*' + num3 + ' = ' + producto);
-        }
+        if(examen1>=6 && examen2>=6 && examen3>=6)
+          document.write('<p>Felicidades, estás excento con prmedio de ' + promedio + '</p>');
+        else if(examen1>=6 && examen2>=6)
+          document.write('<p>Aún no estás excento. Debes reponer el tercer examen</p>');
+        else if(examen1>=6 && examen3>=6)
+          document.write('<p>Aún no estás excento. Debes reponer el segundo examen</p>');
+        else if(examen2>=6 && examen3>=6)
+          document.write('<p>Aún no estás excento. Debes reponer el primer examen</p>');
+        else
+          document.write('<p>Aún no estás excento. Debes hacer examen final</p>');
       }
+      else
+        document.write('<p>Aún no estás excento. Debes hacer examen final</p>');
+
     </script>
   </body>
 </html>

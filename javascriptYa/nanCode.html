@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+<style>
+.divcodigo
+{
+  color: #F0F0F0;
+  background-color: #003;
+  font-family: monospace;
+}
+</style>
+<meta charset="UTF-8">
+</head>
+
+<body class="divcodigo">
+<pre>
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>&lt;/title>
+    &lt;meta charset="UTF-8">
+  &lt;/head>
+
+  &lt;body style="background-color: white;">
+    &lt;h2>Ejemplo de condiciones if&lt;/h2>
+    &lt;p>
+      Este programa lee las calificaciones de los 3 exámenes parciales de un 
+      alumno. En caso de que la calificación de los 3 exámenes sea aprobatoria, el 
+      alumno excenta; en caso de que sólo un examen tenga calificación reprobatoria 
+      y el promedio de los tres exámenes sea aprobatorio, se debe reponer el examen 
+      reprobado; en cambio, si se reprobó mas de un examen o si el promedio de los 
+      tres exámenes es reprobatorio, se debe realizar examen final.
+    &lt;/p>
+
+    &lt;script>
+      var examen1, examen2, examen3, promedio;
+      examen1 = parseInt(prompt('Escriba la calificación del primer examen', ''));
+      examen2 = parseInt(prompt('Escriba la calificación del segundo examen', ''));
+      examen3 = parseInt(prompt('Escriba la calificación del tercer examen', ''));
+      if(isNaN(examen1) || isNaN(examen2) || isNaN(examen3) ||
+               examen1>10 || examen1&lt;0 ||
+               examen2>10 || examen2&lt;0 ||
+               examen3>10 || examen3&lt;0)
+        document.write('&lt;p>Error en uno o más datos. Intente de nuevo.&lt;/p>');
+      else
+      {
+        promedio = (examen1+examen2+examen3)/3;
+        document.write('&lt;p>Examen 1: ' + examen1 + 
+                       '&lt;br>Examen 2: ' + examen2 + 
+                       '&lt;br>Examen 3: ' + examen3 + '&lt;/p>');
+        if(promedio >= 6)
+        {
+          if(examen1>=6 && examen2>=6 && examen3>=6)
+            document.write('&lt;p>Felicidades, estás excento con prmedio de ' + promedio + '&lt;/p>');
+          else if(examen1>=6 && examen2>=6)
+            document.write('&lt;p>Aún no estás excento. Debes reponer el tercer examen&lt;/p>');
+          else if(examen1>=6 && examen3>=6)
+            document.write('&lt;p>Aún no estás excento. Debes reponer el segundo examen&lt;/p>');
+          else if(examen2>=6 && examen3>=6)
+            document.write('&lt;p>Aún no estás excento. Debes reponer el primer examen&lt;/p>');
+          else
+            document.write('&lt;p>Aún no estás excento. Debes hacer examen final&lt;/p>');
+        }
+        else
+          document.write('&lt;p>Aún no estás excento. Debes hacer examen final&lt;/p>');
+      }
+    &lt;/script>
+  &lt;/body>
+&lt;/html>
+</pre>
+</body>
+
+</html>
