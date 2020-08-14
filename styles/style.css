@@ -130,5 +130,38 @@ code
     font-family: monospace;
     font-size: 1.1em;
     background-color: #BBB;
-    padding: 0 3px;
+    padding: 2px 3px;
+    margin: 1em 5em;
+}
+.tabla1, .tabla1 th, .tabla1 td
+{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    display: scroll;
+}
+.tabla1
+{
+    border: 1px solid rgb(52, 116, 235);
+    overflow: auto;
+}
+.tabla1 tr:nth-child(odd)
+{
+    background-color: rgb(185, 207, 248);
+}
+.tabla1 tr:nth-child(even)
+{
+    background-color: rgb(232, 239, 253);
+}
+.tabla1 th
+{
+    color: white;
+    background-color: rgb(52, 116, 235);
+    padding: 0.3em 2em;
+    border: 0px;
+}
+.tabla1 td
+{
+    padding: 0.1em 0.5em;
+    border-bottom: 1px solid rgb(52, 116, 235);
+    border-top: 1px solid rgb(52, 116, 235);
 }

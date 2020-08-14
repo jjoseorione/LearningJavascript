@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+  </head>
+
+
+  <body>
+    <p>
+      Programa que muestra las primeras n potencias de 2.
+    </p>
+    <script>
+      var i, resultado, n; //resultado=2^i ... hasta resultado=2^n
+      n=parseInt(prompt('Escriba el número de potencias de 2 que desea ver:', ''));
+      if(isNaN(n))
+        document.write('Error. Intente de nuevo');
+      else
+      {
+        for(i=1; i<=n; i++)
+        {
+          resultado=2**i;
+          document.write('2<sup>' + i + '</sup> = ' + resultado + '<br>');
+        }
+      }
+
+    </script>
+  </body>
+</html>

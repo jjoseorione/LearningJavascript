@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso Javascript - Funciones</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Funciones</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Las funciones son porciones de código que podemos creas fuera del flujo normal del programa para luego invocarlas cuando sea necesario. Esto es de gran utilidad en todos los lenguajes de programación, ya que de esta manera podemos escribir sólo una vez una porción de código que va a repetirse en varios lugares y en varias ocasiones en el flujo normal del programa y posteriormente sólo invocar esa porción de código, en lugar de escribirla más de una vez.
+    	    </p>
+                Al igual que en otros lenguajes de programación, las funciones pueden hacer uso de parámetros y devolver valores.
+            <p>
+                Para declarar una función la sintaxis es la siguiente:
+                <div class="code" style="margin: 1em 2em;">
+                    function <em>nombreFunción</em>(<em>par1, par2, ... , parN</em>)<br>
+                    {<br>
+                    &nbsp; <em>instrucciones</em>;<br>
+                    &nbsp; return <em>var</em>;<br>
+                    }
+                </div>
+                Donde <em>nombreFunción</em> es el nombre que nosotros daremos a nuestra función; <em>par1</em>, <em>par2</em>, <em>parN</em> son los parámetros que mandaremos a nuestra función para que pueda operar con ellos, los cuales deben ir separado por comas; <em>instrucciones</em> son las líneas de código que formarán parte de nuestra función y <em>var</em> es la variable a ser retornada. Las palabras reservadas function es obligatoria, al igual que return (en caso de que queramos retornar un valor).
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+                El siguiente programa muestra la creación de una función que recibe 5 números y devuelve el mayor de ellos. En este caso, la función sólo será invocada una vez, pero en caso de ser necesario, puede ser invocada las veces que se necesite.
+    	        <iframe src="./funcionesCode.html" width="100%" height="800" style="padding: 0;"></iframe>
+
+                <a href="funcionesExe.html" class="abotonR">Ejecutar ejemplo</a>
+            </p>
+        <a href="./" class="abotonB">Volver al índice</a>
+        </div>
+    </body>
+</html>

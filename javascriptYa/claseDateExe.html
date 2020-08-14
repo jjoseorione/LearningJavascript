@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <p>
+      Este programa muestra la hora y la fecha utilizando la clase Date.
+    </p>
+    <script>
+      var fecha, navidad, otro;
+      fecha = new Date();
+      document.write('Hoy es ' + 
+                     fecha.getDate() + '/' +
+                     (fecha.getMonth()+1) + '/' +
+                     fecha.getFullYear() + '<br>' + 
+                     'La hora es: ' + 
+                     fecha.getHours() + ':' +
+                     fecha.getMinutes() + ':' +
+                     fecha.getSeconds());
+      navidad = new Date(2020, 11, 25, 10, 11, 12);
+      document.write('<br>Navidad es ' + 
+                     navidad.getDate() + '/' +
+                     (navidad.getMonth()+1) + '/' +
+                     navidad.getFullYear() + '<br>' + 
+                     'A las: ' + 
+                     navidad.getHours() + ':' +
+                     navidad.getMinutes() + ':' +
+                     navidad.getSeconds());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo while</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+  	<p>
+  		Este programa pide introducir una frase secreta. La frase secreta es <em>Todo estará bien</em>. Si la frase introducida no es la correcta, el programa la seguirá preguntando hasta introducir la frase correcta.
+  	</p>
+
+    <script>
+      var frase='Todo estará bien', entrada;
+      entrada = prompt('Introduzca la frase secreta: ', '');
+      while(entrada!=frase)
+      {
+      	entrada = prompt('ERROR \n Intente de nuevo. Introduzca la frase secreta: ', '');
+      }
+    </script>
+    <p>
+    	Felicidades, ha adivinado la frase secreta.
+    </p>
+  </body>
+</html>

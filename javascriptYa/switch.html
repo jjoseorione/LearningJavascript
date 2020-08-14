@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso Javascript - Selector switch</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Selector switch</h1>
+
+    	    <h2>Descripción</h2>
+            <p>
+                Un selector <em>switch</em> es similar a un condiconal <em>if</em>, con la diferencia de que el switch está diseñado previamente para poder elegir entre más de dos casos, a diferencia del if que sólo permite elegir entre dos casos distintos (a menos que anidemos varios ifs).
+            </p>
+            <p>
+                La sintaxis del selector switch es la siguiente:
+                <div class="code">
+                    Switch(<em>var</em>)<br>
+                    {<br>
+                    &nbsp;&nbsp;case <em>valor1</em>: <em>intrucciones</em><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; break;<br>
+                    <br>
+                    &nbsp;&nbsp;case <em>valor2</em>: <em>intrucciones</em><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; break;<br>
+                    <br>
+                    &nbsp;&nbsp;...<br>
+                    <br>
+                    &nbsp;&nbsp;default: <em>intrucciones</em><br>
+                    }
+                </div>
+                Donde <em>var</em> es la variable a evaluar y <em>valor1</em>, <em>valor2</em>, etc., son los valores que puede tomar. La instrucción break sirve para salir del ciclo, lo que significa que ya se evaluó la opción deseada. El segmento default se ejecutará cuando no se coincida con ninguno de los casos. Se puede omitir el segmento default y, de esta forma, si no se cumple ninguno de los casos no se realizará ninguna instrucción.
+            </p>
+            <p>
+                La desventaja de un switch con respecto a un if es que switch sólo evalúa una variable a la vez.
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+                En el siguiente ejemplo se muestra la forma en que puede ser usado un selector. Se introcuce un número entre 1 y 10 y se transforma a números romanos
+    	        <iframe src="./switchCode.html" width="100%" height="900" style="padding: 0;"></iframe>
+
+                <a href="switchExe.html" class="abotonR">Ejecutar ejemplo</a>
+            </p>
+        <a href="./" class="abotonB">Volver al índice</a>
+        </div>
+    </body>
+</html>

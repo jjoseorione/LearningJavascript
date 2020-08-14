@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body style="background-color: white;">
+    <h2>Ejemplo de selector switch</h2>
+    <p>
+      Este programa lee un número entre 1 y 10 y lo transforma a números romanos.
+    </p>
+
+    <script>
+      var num;
+      num = parseInt(prompt('Introduce un número del 1 al 10', ''));
+      switch(num)
+      {
+        case 1: 
+          document.write('I');
+          break;
+        case 2: 
+          document.write('II');
+          break;
+        case 3: 
+          document.write('III');
+          break;
+        case 4: 
+          document.write('IV');
+          break;
+        case 5: 
+          document.write('V');
+          break;
+        case 6: 
+          document.write('VI');
+          break;
+        case 7: 
+          document.write('VII');
+          break;
+        case 8: 
+          document.write('VIII');
+          break;
+        case 9: 
+          document.write('IX');
+          break;
+        case 10: 
+          document.write('X');
+          break;
+        default:
+          document.write('<p>Error en el número. Vuelva a intentarlo.</p>');
+      }
+    </script>
+  </body>
+</html>

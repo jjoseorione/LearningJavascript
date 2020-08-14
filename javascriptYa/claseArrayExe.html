@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo clase Array</title>
+    <meta charset="UTF-8">
+    <style>
+      .tabla3, .tabla3 th, .tabla3 td
+      {
+        font-family: sans-serif;
+        border-collapse: collapse;
+      }
+      .tabla3
+      {
+        border: 1px solid rgb(52, 116, 235);
+      }
+      .tabla3 tr:nth-child(odd)
+      {
+        background-color: rgb(185, 207, 248);
+      }
+      .tabla3 tr:nth-child(even)
+      {
+        background-color: rgb(232, 239, 253);
+      }
+      .tabla3 th
+      {
+        color: white;
+        background-color: rgb(52, 116, 235);
+        padding: 0.3em 2em;
+        border: 0px;
+      }
+      .tabla3 td
+      {
+        padding: 0.1em 0.5em;
+        border-bottom: 1px solid rgb(52, 116, 235);
+        border-top: 1px solid rgb(52, 116, 235);
+      }
+      .tabla3 td:nth-child(2)
+      {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Este programa pide al usuario los nombres y sueldos de n empleados (cantidad a elegir por el usuario), mismos que se guardarán en dos arreglos distintos a través de una función set. Posteriormente se deberá mostrar en una tabla el sueldo de cada empleado, así como el total de la suma de todos los sueldos. Adicionalmente se agrega estilo a la tabla y se hace a prueba de errores (en caso de no meter números en la petición) solo por diversión.
+    </p>
+    <script>
+      function setNomb(nombres)
+      {
+        var i;
+        for(i=0; i<nombres.length; i++)
+          nombres[i]=prompt('Escriba el nombre del empleado ' + (i+1), '');
+        return nombres;
+      }
+
+      function setSueldos(sueldos, nombres)
+      {
+        var i;
+        for(i=0; i<sueldos.length; i++)
+        {
+          sueldos[i]=parseInt(prompt('Escriba el sueldo de ' + nombres[i], ''));
+          if(isNaN(sueldos[i]))
+          {
+            error=true;
+            return;
+          }
+        }
+        return sueldos;
+      }
+
+      function sumaArreglo(arreglo)
+      {
+        var i, total=0;
+        for(i=0; i<arreglo.length; i++)
+          total+=arreglo[i];
+        return total;
+      }
+
+
+      //*********************************************//
+      //********Rutina principal del programa********//
+      //*********************************************//
+
+      var totalEmpl, arrayNomb, arraySueldos, sumaSueldos, error=false;
+      totalEmpl=parseInt(prompt('Escriba el número de empleados a calcular', ''));
+      if(isNaN(totalEmpl))
+        document.write('Error. Intente nuevamente');
+      else
+      {
+        arrayNomb = new Array(totalEmpl);
+        arraySueldos = new Array(totalEmpl);
+        arrayNomb=setNomb(arrayNomb);
+        arraySueldos=setSueldos(arraySueldos, arrayNomb);
+      }
+
+      if(error)
+        document.write('Error. Intente nuevamente');
+      else
+      {
+        sumaSueldos=sumaArreglo(arraySueldos);
+        document.write('<table class="tabla3">');
+        document.write('<tr> <th>Nombre</th> <th>Sueldo</th> </tr>'); //header
+        for(var i=0; i<totalEmpl; i++)
+          document.write('<tr> <td>' + arrayNomb[i] + '</td><td>' + arraySueldos[i] + '</td></tr>');
+        document.write('<tr> <td>Total</td> <td>' + sumaSueldos + '</td> </tr>');
+        document.write('</table>');
+      }
+    </script>
+  </body>
+</html>

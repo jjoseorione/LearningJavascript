@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+<style>
+.divcodigo
+{
+  color: #F0F0F0;
+  background-color: #003;
+  font-family: monospace;
+}
+</style>
+<meta charset="UTF-8">
+</head>
+
+<body class="divcodigo">
+<pre>
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>Ejemplo while&lt;/title>
+    &lt;meta charset="UTF-8">
+  &lt;/head>
+
+  &lt;body>
+    &lt;p>
+      Este programa pide introducir una frase secreta. La frase secreta es &lt;em>Todo estará bien&lt;/em>. Si la frase introducida no es la correcta, el programa la seguirá preguntando hasta introducir la frase correcta.
+    &lt;/p>
+
+    &lt;script>
+      var frase='Todo estará bien', entrada;
+      entrada = prompt('Introduzca la frase secreta: ', '');
+      while(entrada!=frase)
+      {
+        entrada = prompt('ERROR \n Intente de nuevo. Introduzca la frase secreta: ', '');
+      }
+    &lt;/script>
+    &lt;p>
+      Felicidades, ha adivinado la frase secreta.
+    &lt;/p>
+  &lt;/body>
+&lt;/html>
+</pre>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <p>
+      Este programa recibe 5 números tecleados por el usuario y devuelve el mayor de ellos a trabés de una función.
+    </p>
+    <script>
+      function devuelveMayor(num1, num2, num3, num4, num5)
+      {
+        if(num1>=num2 && num1>=num3 && num1>=num4 && num1>=num5)
+          return num1;
+        else if(num2>=num1 && num2>=num3 && num2>=num4 && num2>=num5)
+          return num2;
+        else if(num3>=num1 && num3>=num2 && num3>=num4 && num3>=num5)
+          return num3;
+        else if(num4>=num1 && num4>=num2 && num4>=num3 && num4>=num5)
+          return num4;
+        else if(num5>=num1 && num5>=num2 && num5>=num3 && num5>=num4)
+          return num5;
+      }
+      var a, b, c, d, e, mayor;
+      a = parseInt(prompt('Introduzca el primer valor', ''));
+      b = parseInt(prompt('Introduzca el segundo valor', ''));
+      c = parseInt(prompt('Introduzca el tercer valor', ''));
+      d = parseInt(prompt('Introduzca el cuarto valor', ''));
+      e = parseInt(prompt('Introduzca el quinto valor', ''));
+      if(isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d) || isNaN(a))
+        document.write('Error en uno o más valores. Intente de nuevo');
+      else
+      {
+        mayor=devuelveMayor(a,b,c,d,e);
+        document.write('El número mayor es: ' + mayor);
+      }
+
+    </script>
+  </body>
+</html>

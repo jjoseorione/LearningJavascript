@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso Javascript - Clase Date</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Clase Date</h1>
+
+    	    <h2>Descrićión</h2>
+    	    <p>
+    		    Javascript dispone de varias clases predefinidas para acceder a muchas de las funciones normales de cualquier lenguaje, como puede ser el manejo de vectores o el de fechas. La clase code nos permitirá manejar fechas y horas. Puede ser invocada de la siguiente forma:
+                <div class="code">
+                    fecha = new Date(); //creación de un objeto de la clase Date<br>
+                    fecha = new Date(año, mes, dia);<br>
+                    fecha = new Date(año, mes, dia, hora, minuto, segundo);
+                </div>
+                Si no utilizamos parámetros, el objeto fecha contendrá la fecha y hora actual recuperadas del reloj de nuestra computadora. En caso contrario, hay que tener en cuenta que los meses comienzan por cero. Así, por ejemplo:
+                <div class="code">
+                    navidad2020 = new Date(2020, 11, 25);
+                </div>
+                El objeto Date dispone, entre otros, de los siguientes métodos:
+                <ul>
+                    <li>getFullYear()</li>
+                    <li>setFullYear(año)</li>
+                    <li>getMonth</li>
+                    <li>setMonth(mes)</li>
+                    <li>getDate() //Día del mes</li>
+                    <li>setDate(dia)</li>
+                    <li>getHours()</li>
+                    <li>setHours(horas)</li>
+                    <li>getMinutes()</li>
+                    <li>setMinutes(minutos)</li>
+                    <li>getSeconds()</li>
+                    <li>setSeconds(segundos)</li>
+                    <li>getDay() //Día de la semana (0 - 6)</li>
+                </ul>
+                Llegado este punto es importante aclarar que en muchas de las clases que creemos será útil crear métodos set y get. Los métodos get sirven para obtener el valor de los atributos de un objeto, mientras que los métodos set sirven para definirlos (darles un valor).
+    	    </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+                El siguiente programa muestra en una página la fecha y la hora actual. También crea una fecha y la muestra.
+    	        <iframe src="./claseDateCode.html" width="100%" height="600" style="padding: 0;"></iframe>
+
+                <a href="claseDateExe.html" class="abotonR">Ejecutar ejemplo</a>
+            </p>
+        <a href="./" class="abotonB">Volver al índice</a>
+        </div>
+    </body>
+</html>
